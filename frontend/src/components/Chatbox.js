@@ -17,6 +17,7 @@ const Chatbox = ({ fetchAgain, setFetchAgain }) => {
       h="90vh" /* Increase height to 90% of viewport height */
       borderRadius="lg"
       borderWidth="1px"
+      overflow-y = "scroll"
     >
     <SingleChat fetchAgain={fetchAgain} setFetchAgain={setFetchAgain}> </SingleChat>
     </Box>
