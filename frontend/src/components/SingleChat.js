@@ -201,7 +201,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             w="100%" /* Increase width to 80% */
             h="80vh" /* Increase height to 90% of viewport height */
             borderRadius="lg"
-            overflowY="hidden"
+            overflowY="scroll"
           >
             {loading ? (
               <Spinner
@@ -238,6 +238,12 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
                 placeholder="Enter a message.."
                 value={newMessage}
                 onChange={typingHandler}
+                style={{
+                position: "relative",
+                bottom: 0,
+                left: 0,
+                zIndex: 999 // adjust z-index if necessary
+                }}
               />
             </FormControl>
           </Box>

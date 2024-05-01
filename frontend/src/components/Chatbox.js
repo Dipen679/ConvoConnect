@@ -14,10 +14,10 @@ const Chatbox = ({ fetchAgain, setFetchAgain }) => {
       p={3}
       bg="white"
       w={{ base: "100%", md: "80%" }} /* Increase width to 80% */
-      h="90vh" /* Increase height to 90% of viewport height */
+      h="86vh" /* Increase height to 90% of viewport height */
       borderRadius="lg"
       borderWidth="1px"
-      overflow-y = "scroll"
+      overflowY = "scroll"
     >
     <SingleChat fetchAgain={fetchAgain} setFetchAgain={setFetchAgain}> </SingleChat>
     </Box>
